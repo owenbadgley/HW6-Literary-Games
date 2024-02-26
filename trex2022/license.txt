@@ -1,0 +1,11 @@
+Model Information:
+* title:	Trex2022
+* source:	https://sketchfab.com/3d-models/trex2022-ad57bbbdf2b24fa3994f8638d28da8a1
+* author:	kenchoo (https://sketchfab.com/kenchoo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Trex2022" (https://sketchfab.com/3d-models/trex2022-ad57bbbdf2b24fa3994f8638d28da8a1) by kenchoo (https://sketchfab.com/kenchoo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

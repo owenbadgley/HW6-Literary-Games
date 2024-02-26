@@ -1,4 +1,37 @@
-[gd_scene format=3 uid="uid://bfghlawkvhlft"]
+[gd_scene load_steps=6 format=3 uid="uid://bfghlawkvhlft"]
+
+[ext_resource type="PackedScene" uid="uid://cegep4bj0gkf5" path="res://trex2022/scene.gltf" id="1_2rpce"]
+[ext_resource type="PackedScene" uid="uid://duffmm7q4pcdx" path="res://rock_terrain/scene.gltf" id="2_6synb"]
+[ext_resource type="PackedScene" uid="uid://hql3saofu476" path="res://silent_ash/scene.gltf" id="3_h0x4j"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d616u"]
+albedo_color = Color(0.537255, 0.956863, 0.992157, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8ejp8"]
+material = SubResource("StandardMaterial3D_d616u")
+size = Vector2(250, 200)
+center_offset = Vector3(0, 0, -30)
+orientation = 2
 
 [node name="Node3D" type="Node3D"]
 transform = Transform3D(-0.304831, 0, 0.952406, 0, 1, 0, -0.952406, 0, -0.304831, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.866981, 0.168931, 0.468836, -0.29113, 0.93525, 0.201374, -0.40446, -0.31108, 0.860025, 14.7461, 7.12128, 11.6151)
+current = true
+fov = 63.7832
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.838636, 0.15577, 0.521946, -0.370097, 0.866026, 0.336196, -0.399649, -0.475117, 0.78393, -8.07006, 5.26774, 1.68591)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_2rpce")]
+transform = Transform3D(0.0290816, 0.00256126, -0.0069068, -0.00159057, 0.029648, 0.00429725, 0.00719264, -0.0037995, 0.0288761, 7.75856, -1.82624, -13.1489)
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("2_6synb")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -18.435, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_8ejp8")
+
+[node name="Sketchfab_Scene3" parent="." instance=ExtResource("3_h0x4j")]
+transform = Transform3D(1.55708, 0, 2.56428, 0, 3, 0, -2.56428, 0, 1.55708, 7.98901, 6.70745, -9.59224)
